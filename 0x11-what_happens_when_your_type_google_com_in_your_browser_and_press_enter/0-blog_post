@@ -1,0 +1,35 @@
+---
+
+# What Happens When You Type https://www.google.com and Press Enter?
+
+When you enter the URL `https://www.google.com` into your browser, a complex series of events unfolds, connecting you to one of the world's most popular search engines. Let's break down this process step by step.
+
+## DNS Request
+First, your browser needs to know the IP address associated with `www.google.com`. This is where the **Domain Name System (DNS)** comes into play. Your browser sends a DNS query over the internet to find out the IP address for the domain name.
+
+## TCP/IP
+Once the IP address is known, your browser uses the **Transmission Control Protocol (TCP)** over the **Internet Protocol (IP)** to establish a connection with Google's server. TCP/IP ensures that packets of data are sent and received reliably.
+
+## Firewall
+Before the request leaves your computer, it passes through a **firewall**. This is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules, ensuring that only safe connections are made.
+
+## HTTPS/SSL
+The `https` in the URL indicates that the connection is secure, using **HyperText Transfer Protocol Secure (HTTPS)** with **Secure Sockets Layer (SSL)** encryption. This means that the information exchanged between your browser and Google's server is encrypted for privacy and security.
+
+## Load-balancer
+Google receives a massive amount of traffic, so to efficiently handle all the incoming requests, a **load-balancer** is used. This device distributes the network or application traffic across a number of servers, ensuring no single server becomes overwhelmed.
+
+## Web Server
+The load-balancer redirects your request to one of Google's **web servers**. A web server's primary function is to store, process, and deliver web pages to users.
+
+## Application Server
+The web server passes the request to an **application server** if necessary. The application server runs the application's logic, accessing data and performing computations.
+
+## Database
+For some requests, the application server will communicate with a **database** to retrieve stored information. In the case of Google, this could be your search history or preferences if you're signed in.
+
+When the process is complete, the web server sends the requested web page back to your browser, which then displays the Google search page, ready for you to use.
+
+---
+
+This blog post provides a high-level overview of the complex interactions between various technologies that make up the internet as we know it. Each step is crucial in delivering the content you request in a secure and efficient manner.
